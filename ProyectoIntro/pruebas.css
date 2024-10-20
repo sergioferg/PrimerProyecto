@@ -1,0 +1,286 @@
+body {
+    background-color: #13161c;
+    margin: 0;
+    
+}
+
+.bg {
+   position: fixed;
+   background-color: #13161c;
+   background-image: radial-gradient(37.88% 68.62% at 50% 0, rgba(233, 10, 10, 0.3) 0, rgba(124, 0, 0, 0) 80%), radial-gradient(10% 10% at 50% 0, rgba(233, 10, 10, 0.5) 0, rgba(124, 0, 0, 0.4) 90%, rgba(124, 0, 0, 0) 0), radial-gradient(100% 28.09% at 100% 10%, rgba(233, 10, 10, 0.2) 0, rgba(124, 0, 0, 0.1) 80%, rgba(124, 0, 0, 0) 100%), linear-gradient(180deg, rgba(124, 8, 0, 0.075) 35.79%, rgba(124, 0, 0, 0.05) 80%, #1c1813), radial-gradient(74.84% 135.56% at 100% 10%, rgba(124, 0, 0, 0.5) 0, #1c1713 80%);
+    background-repeat: no-repeat;
+    background-size: 220%;
+    height: 90svh;
+    z-index: -2;
+    filter: blur(50px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0;
+    font-family: Whitney, Arial;
+}
+
+span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.title {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.login {
+   z-index: 1000;
+    display: none;
+    padding: 10px 10px;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(43,45,49,255);
+    box-shadow: inset 0px 0px 3px black
+}
+/* 
+
+#E0E4EE
+#949ba0 
+rgba(30,31,34,255)
+rgba(43,45,49,255)
+
+#D7D2CB gris 
+#EF3340 roojo
+#25282A ggris osc
+
+
+*/
+.username-text {
+    color: #949ba0;
+    margin-top: 10px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.login-input {
+    background-color: rgba(30,31,34,255);
+    display: block;
+    border-radius: 5px;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    padding-left: 6px;
+    color: #949ba0;
+    font-family: Whitney, Arial;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 92%;
+}
+
+.login-input:focus, input:focus {
+    outline: none;
+ }
+
+ .divider {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 1px;
+    width: 200px;
+    border-bottom: solid;
+    border-bottom-color: rgba(30,31,34,255);
+    border-width: 1px;
+ }
+
+ .login-button {
+    color: white;
+    padding: 5px 63px;
+    font-family: Whitney, Arial;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: #EF3340;
+    border-radius: 3px;
+    border: none;
+    border-width: 1px;
+    transition: background-color 0.15s
+    opacity 0.10s;
+ }
+
+ .login-button:hover {
+    background-color: #f84a55;
+ }
+
+ .login-button:active {
+    background-color: #ff848c;
+ }
+
+ .copyright {
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+ }
+
+ .copyright-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+ }
+
+ .logo-image {
+    width: 100px;
+ }
+
+ .logo {
+    height: 35px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+ }
+
+ .x-button {
+   position: fixed;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   padding-top: 2px;
+   background: none;
+   border: 1px solid white;
+   color: white;
+ }
+
+ .check-image {
+   display: block;
+   width: 1px;
+   visibility: hidden;
+ }
+
+ .check {
+   height: 100px;
+   margin-top: 14px;
+   display: flex;
+   align-items: end;
+   justify-content: center;
+ }
+
+ #boton {
+   z-index: 2;
+   background-color: white;
+   padding: 10px 13px;
+   border-radius: 10px;
+   border: none;
+   cursor: pointer;
+ }
+
+
+ .container {
+   position: fixed;
+   left: 10%;
+   right: 10%;
+   bottom: 0;
+   top: 0;
+   z-index: 10;
+   
+ }
+
+ .top-container {
+   z-index: 10;
+   margin: 4px 167px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+.title-span {
+   font-family: Whitney, Arial;
+   z-index: 100;
+   font-size: 40px;
+   color:white;
+}
+
+.title-text {
+   margin-top: 200px;
+   z-index: 100;
+   font-size: 40px;
+   color:white;
+   text-align: center;
+ }
+
+ .subtitle-text {
+   text-align: center;
+   margin-top: 40px;
+   color: rgba(255, 255, 255, 0.76);
+   font-size: 19px;
+ }
+
+ .cursos {
+   margin: 50px 25%;
+   display: grid;
+   grid-template-columns: 300px 1fr 300px;
+   height: 100px;
+ }
+
+ .curso {
+  padding-right: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+   display: flex;
+   border-radius: 8px;
+   border: none;
+   background-color: rgba(255, 255, 255, 0.041);
+ }
+
+ .curso-title-text {
+
+   text-align: center;
+   color: white;
+ }
+
+ .curso-logo {
+   width: 50px;
+   height: 70px;
+   object-fit: contain;
+   object-position: center;
+   margin: 15px;
+ }
+
+ .school-text {
+   margin: 10px 0px;
+   color: gray;
+ }
+
+ .description-text {
+   color: white;
+   font-size: 10px;
+   text-wrap: wrap;
+ }
+
+ /*
+ <div class="container">
+        <div class="top-container">
+            <img style="width: 130px;" src="Iconos/algobyte-logo.png" alt="algoByte-logo">
+            <button id="boton">
+                Prueba loca
+            </button>
+        </div>
+    </div>
+*/
